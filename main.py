@@ -37,6 +37,7 @@ def export(binary):
 #pic -> text
 def encode(filepath):
     binary = binary_pict(filepath)
+    text.delete(1.0, END)
     text.insert(1.0, binary)
     
 def insert_file():
